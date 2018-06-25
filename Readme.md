@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Юлия Барановская](https://up.htmlacademy.ru/htmlcss/21/user/666589).
-* Наставник: `Неизвестно`.
+* Студент: [Юлия Барановская](https://up.htmlacademy.ru/htmlcss/20/user/666589).
+* Наставник: [Дмитрий Вашкевич](https://htmlacademy.ru/profile/id116959)
 
 ---
 
