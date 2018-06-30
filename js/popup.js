@@ -7,7 +7,6 @@ var maplink=document.querySelector(".contacts-button-map");
 var mappopup=document.querySelector(".modal-map");
 var mapclose=mappopup.querySelector(".modal-close");
 
-
 write.addEventListener("click", function (evt){
 	evt.preventDefault();
 	popup.classList.add("modal-show");
@@ -37,45 +36,9 @@ mapclose.addEventListener("click", function (evt){
 	mappopup.classList.remove("modal-show");
 });
 
+function switchSlider(n, evt) {
 
-// slider_controls_first.addEventListener("click", function(evt, ){
-// 	evt.preventDefault();
-
-// 	first_slider.classList.add("active-slide");
-// 	second_slider.classList.remove("active-slide");
-// 	third_slider.classList.remove("active-slide");
-
-// 	slider_controls_first.classList.add("active");
-// 	slider_controls_second.classList.remove("active");
-// 	slider_controls_third.classList.remove("active");
-// });
-
-// slider_controls_second.addEventListener("click", function(evt){
-// 	evt.preventDefault();
-	
-// 	first_slider.classList.remove("active-slide");
-// 	second_slider.classList.add("active-slide");
-// 	third_slider.classList.remove("active-slide");
-
-// 	slider_controls_first.classList.remove("active");
-// 	slider_controls_second.classList.add("active");
-// 	slider_controls_third.classList.remove("active");
-// });
-
-// slider_controls_third.addEventListener("click", function(evt){
-// 	evt.preventDefault();
-	
-// 	first_slider.classList.remove("active-slide");
-// 	second_slider.classList.remove("active-slide");
-// 	third_slider.classList.add("active-slide");
-
-// 	slider_controls_first.classList.remove("active");
-// 	slider_controls_second.classList.remove("active");
-// 	slider_controls_third.classList.add("active");
-// });
-
-
-function switchSlider(n) {
+	if (evt.type == 'keyup' && evt.keyCode != 13) return;
 
 	for (var i = 1; i <= 3; i++) {
 		var slide = document.querySelector(".slide-" + i);
@@ -88,26 +51,14 @@ function switchSlider(n) {
 			slide.classList.remove('active-slide');
 			control.classList.remove('active')
 		}
-	}
+	};
 };
-
-
-function wrapper (arg) {
-	return function () {
-		switchSlider(arg);
-	}
-};
-
 
 for (var i = 1; i <= 3; i++) {
 	var control = document.querySelector(".slider-controls-" + i);
-	control.addEventListener('click', wrapper(i))
+	control.addEventListener('click', switchSlider.bind(null, i));
+	control.addEventListener('keyup', switchSlider.bind(null, i));
 };
-
-// slider_controls_1.addEventListener("click", );
-// slider_controls_2.addEventListener("click", switchSlider(2)); - это неправильно
-// slider_controls_3.addEventListener("click", switchSlider(3));
-
 
 function switchSlider2(n){
 
@@ -125,14 +76,7 @@ function switchSlider2(n){
 	}
 };
 
-
-function wrapper2(arg) {
-	return function(){
-		switchSlider2(arg);
-	}
-};
-
 for (var i=1; i<=3; i++) {
 	var button=document.querySelector(".slider--" + i);
-	button.addEventListener("click", wrapper2(i))
+	button.addEventListener("click", switchSlider2.bind(null, i))
 };

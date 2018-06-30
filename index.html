@@ -1,19 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/stylesheet.css">
-   <!-- <style>
-      .main-container {
-        width: 1160px;
-        margin: 0 auto;
-      }
-
-    </style>-->
   </head>
+
   <body>
     
     <header class="main-container">
@@ -37,9 +33,9 @@
               </a>
             </li>
             <li class="compare"> 
-                <a href="compare.html">
-                  Сравнить
-                </a>
+              <a href="compare.html">
+                Сравнить
+              </a>
             </li>
             <li class="cart">
               <a href="cart.html">
@@ -74,7 +70,7 @@
                   </ul>
                 </li>
               </ul>
-            </li>       
+            </li>
           </ul>
 
           <ul class="main-services-navigation">
@@ -113,9 +109,9 @@
                     <td class="table-data">Карбон</td>
                   </tr>
                   <tr>
-                    <td class="table-title">Длина палки</td>
-                    <td class="table-title">Вес палки</td>
-                    <td class="table-title">Материал</td>
+                    <th class="table-title">Длина палки</th>
+                    <th class="table-title">Вес палки</th>
+                    <th class="table-title">Материал</th>
                   </tr>
                 </table>
               </div>
@@ -137,7 +133,7 @@
                     <td class="table-data">48 часов</td>
                   </tr>
                   <tr>
-                    <td class="table-title">Без подзарядки</td>
+                    <th class="table-title">Без подзарядки</th>
                   </tr>
                 </table>
               </div>
@@ -160,8 +156,8 @@
                     <td class="table-data">50 м</td>
                   </tr>
                   <tr>
-                    <td class="table-title">Дальность полета</td>
-                    <td class="table-title">Радиус поражения</td>
+                    <th class="table-title">Дальность полета</th>
+                    <th class="table-title">Радиус поражения</th>
                   </tr>
                 </table>
               </div>
@@ -169,16 +165,15 @@
           </li>
         </ul>
 
-        <input type="radio" id="btn-1" name="toogle">
-        <input type="radio" id="btn-2" name="toogle">
-        <input type="radio" id="btn-3" name="toogle">
-
+        <input type="radio" id="btn-1" name="toogle" value="Первый слайд">
+        <input type="radio" id="btn-2" name="toogle" value="Второй слайд">
+        <input type="radio" id="btn-3" name="toogle" value="Третий слайд">
 
         <div class="slider-controls">
-          <label class="slider-controls-1 active" for="btn-1"></label>
-          <label class="slider-controls-2" for="btn-2"></label>
-          <label class="slider-controls-3" for="btn-3"></label>
-        </div> 
+          <label class="slider-controls-1 active" for="btn-1" tabindex="0"><span class="visually-hidden">Первый слайд</span></label>
+          <label class="slider-controls-2" for="btn-2" tabindex="0"><span class="visually-hidden">Второй слайд</span></label>
+          <label class="slider-controls-3" for="btn-3" tabindex="0"><span class="visually-hidden">Первый слайд</span></label>
+        </div>
 
       </section>
 
@@ -187,73 +182,51 @@
           <li class="device-catalog-item">
             <a href="#">
               <div class="device-catalog-content img-1">
-                
-                <!--<div class="device-catalog-image">
-                </div>-->
-                 <p>Виртуальная реальность</p>
+                <p>Виртуальная реальность</p>
               </div>
-            </a> 
+            </a>
           </li>
          
           <li class="device-catalog-item">
             <a href="catalog.html">
               <div class="device-catalog-content img-2">
-                <!--<div class="device-catalog-image">
-                </div>-->
-               <p>Моноподы <br>для селфи</p> 
+                <p>Моноподы <br>для селфи</p>
               </div>
-              
             </a>
           </li>
         
           <li class="device-catalog-item">
             <a href="#">
               <div class="device-catalog-content img-3">
-                
-                <!--<div class="device-catalog-image">
-                </div>-->
                 <p>Экшн-камеры</p>
               </div>
-              
             </a>
           </li>
           
           <li class="device-catalog-item">
             <a href="#">
               <div class="device-catalog-content img-4">
-                
-                <!--<div class="device-catalog-image">
-                </div>-->
                 <p>Фитнес-браслеты</p>
               </div>
-              
             </a>
           </li>
          
           <li class="device-catalog-item">
             <a href="#">
               <div class="device-catalog-content img-5">
-                
-                <!--<div class="device-catalog-image">
-                </div>-->
                 <p>Умные часы</p>
               </div>
-              
             </a>
           </li>
 
           <li class="device-catalog-item">
             <a href="#">
               <div class="device-catalog-content img-6">
-               
-               <!-- <div class="device-catalog-image">
-                </div>-->
                 <p>Квадрокоптеры</p>
               </div>
-              
-            </a> 
+            </a>
           </li>
-        </ul>  
+        </ul>
       </div>
 
       <div class="another-section">
@@ -300,6 +273,7 @@
           </div>
         </div>
       </div>
+
       <section class="logo-list">
         <h2 class="visually-hidden">Бренды</h2>
         <ul class="logo-list-content">
@@ -320,7 +294,6 @@
             <img class="hover" src="img/logo-4-color.jpg" width="260" height="100" alt="Бренд-4">
           </li>
         </ul>
-        
       </section>
 
       <section class="index-columns">
@@ -349,7 +322,7 @@
           <figure>
             <a class="contacts-button-map" href="map.html"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a>
           </figure>
-          <button class="button button-write-us" type="button">Напишите нам</button>
+          <a class="button button-write-us" href="write-us.html">Напишите нам</a>
         </section>
       </section>
     </main>
@@ -358,10 +331,9 @@
       <div class="main-container-footer">
         <section class="main-footer-start">
           <h2 class="visually-hidden">Для пользователя</h2>
-          <a class="main-footer-logo">DEVICE</a>
+          <a class="main-footer-logo" href="#">DEVICE</a>
           <ul class="footer-user-navigation">
             <li class="footer-user-link">
-
               <a href="login.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12"><path d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/></svg>
               Войти
@@ -374,7 +346,6 @@
               </a>
             </li>
             <li class="footer-cart">
-              
               <a href="cart.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/><path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/></svg>
                 Корзина
@@ -399,9 +370,9 @@
           <section class="footer-social">
             <h2 class="visually-hidden">Мы в соцсетях</h2>
             <ul class="social-nets">
-              <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-              <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-              <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+              <li><a class="social-button fb" href="https://facebook.com"><span class="visually-hidden">Фейсбук</span></a></li>
+              <li><a class="social-button instagram" href="https://instagram.com"><span class="visually-hidden">Инстаграм</span></a></li>
+              <li><a class="social-button twitter" href="https://twitter.com"><span class="visually-hidden">Твиттер</span></a></li>
             </ul>
           </section>
           <p class="footer-copyright">
@@ -434,7 +405,7 @@
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button> 
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
 
     <section class="map modal-map">
@@ -446,31 +417,8 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-
-
-	        <!--<ul class="slide-switches">
-	          <li class="slide-radio">
-	            <button class="slide-btn" type="button">
-
-	            </button>
-	          </li>
-	          <li class="slide-radio">
-	            <button class="slide-btn" type="button">
-	              
-	            </button>
-	          </li>
-	          <li class="slide-radio">
-	            <button class="slide-btn" type="button">
-	              
-	            </button>
-	          </li>
-	        </ul>-->
-	        
-  
     <script src="js/popup.js">
-
-
     </script>
-      
+
   </body>
 </html>
